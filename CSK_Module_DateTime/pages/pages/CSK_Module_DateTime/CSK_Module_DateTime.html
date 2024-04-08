@@ -37,6 +37,23 @@
 			<stacked-pane id="SP_LoggedIn" value="true">
 				<layout-row id="RowLayout8">
 					<layout-column id="ColumnLayout1" style="align-items: stretch">
+						<davinci-collapse id="Collapse_TimezoneInfo"
+							collapsed-title="Timezone info" expanded-title="Hide">
+							<layout-row id="RowLayout12">
+								<layout-column id="ColumnLayout25" style="align-items: stretch">
+									<davinci-callout id="Callout_ETC_Timezone" type="info">
+										<span>
+											Be aware of the fact that 'Etc/GMT...' timezones are intentionally inverted.
+										</span>
+									</davinci-callout>
+									<davinci-callout id="Callout_NTP" type="info">
+										<span>
+											Set timezone before getting time from NTP server.
+										</span>
+									</davinci-callout>
+								</layout-column>
+							</layout-row>
+						</davinci-collapse>
 						<davinci-drop-down id="DD_Timezone" label="Select timezone:"
 							title="Set the timezone">
 							<crown-edpws-binding property="data"
